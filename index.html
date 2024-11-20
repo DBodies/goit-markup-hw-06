@@ -26,8 +26,12 @@
       <div class="container hero-wrap">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo">
-            web <span class="webes">Studio</span>
+            web<span class="webes">Studio</span>
           </a>
+          <button class="top-btn" type="button"><svg class="btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-313"></use>
+          </svg></button>
+
           <ul class="header-menu-list">
             <li class="header-menu-item">
               <a class="header-menu-link active" href="./index.html">Studio</a>
@@ -145,7 +149,8 @@
           <ul class="second-header-menu">
             <li class="second-h-list">
               <img
-                src="./images/Body1.jpg"
+                srcset="./images/Mobile/mark1x.jpg 1x, ./images/Mobile/Mark@2x.jpg 2x"
+                src="./images/Mobile/mark1x.jpg"
                 alt="Our Product Designer"
                 width="264"
               />
@@ -186,7 +191,8 @@
             </li>
             <li class="second-h-list">
               <img
-                src="./images/Body2.jpg"
+              srcset="./images/Mobile/Tom.jpg 1x,./images/Mobile/Tom@2x.jpg 2x"
+                src="./images/Mobile/Tom.jpg"
                 alt="Our Frontend Developer"
                 width="264"
               />
@@ -226,7 +232,9 @@
               </div>
             </li>
             <li class="second-h-list">
-              <img src="./images/Body3.jpg" alt="Our Marketing" width="264" />
+              <img src="./images/Mobile/Camila1x.jpg" 
+              srcset="./images/Mobile/Camila1x.jpg 1x, ./images/Mobile/Camila@2x.jpg 2x" 
+              alt="Our Marketing" width="264" />
               <div class="names-worker">
                 <h3 class="name-bodies">Camila Garcia</h3>
                 <p class="bodies-do">Marketing</p>
@@ -263,7 +271,9 @@
               </div>
             </li>
             <li class="second-h-list">
-              <img src="./images/Body4.jpg" alt="Our UI Designer" width="264" />
+              <img src="./images/Mobile/Daniel.jpg" 
+              srcset="./images/Mobile/Daniel.jpg 1x, ./images/Mobile/Daniel@2x.jpg 2x" 
+              alt="Our UI Designer" width="264" />
               <div class="names-worker">
                 <h3 class="name-bodies">Daniel Wilson</h3>
                 <p class="bodies-do">UI Designer</p>
@@ -312,7 +322,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/firstimage1.jpg"
+                srcset="./images/Mobile/Banking.jpg 1x, ./images/Mobile/Banking@2x.jpg 2x"
+                  src="./images/Mobile/Banking.jpg"
                   alt="Banking App"
                   width="360"
                   class="our-portfolio-image"
@@ -331,7 +342,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/secondimage2.jpg"
+                srcset="./images/Mobile/Cashless.jpg 1x, ./images/Mobile/Cashless@2x.jpg 2x"
+                  src="./images/Mobile/Cashless.jpg"
                   alt="Cashless Payment"
                   width="360"
                   class="our-portfolio-image"
@@ -350,7 +362,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/thirdimage3.jpg"
+                srcset="./images/Mobile/Mediation.jpg 1x, ./images/Mobile/Mediation@2x.jpg 2x"
+                  src="./images/Mobile/Mediation.jpg"
                   alt="Meditation App"
                   width="360"
                   class="our-portfolio-image"
@@ -369,7 +382,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/fourthimage4.jpg"
+                srcset="./images/Mobile/Taxi.jpg 1x, ./images/Mobile/Taxi@2x.jpg 2x"
+                  src="./images/Mobile/Taxi.jpg"
                   alt="Taxi Service"
                   width="360"
                   class="our-portfolio-image"
@@ -388,7 +402,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/fivethimage5.jpg"
+                srcset="./images/Mobile/Screen.jpg 1x, ./images/Mobile/Screen@2x.jpg 2x"
+                  src="./images/Mobile/Screen.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   class="our-portfolio-image"
@@ -407,7 +422,8 @@
             <li class="our-portfolio-list">
               <div class="traveled-overlay">
                 <img
-                  src="./images/sixthimage6.jpg"
+                srcset="./images/Mobile/Courses.jpg 1x, ./images/Mobile/Courses@2x.jpg 2x" 
+                  src="./images/Mobile/Courses.jpg"
                   alt="Online speak Courses"
                   width="360"
                   class="our-portfolio-image"
@@ -543,5 +559,64 @@
 </form>
     </div>
    </div>
+   <!-- Mobile-menu Nav -->
+    <div class="mobile-menu-overlay is-open">
+      <div class="mobile-menu container-menu">
+        <button type="button" class="mobile-btn-closer"><svg class="mobile-close-icon" width="8" height="8">
+  <use href="./images/icons.svg#icon-close-black-18dp"></use>
+</svg></button>
+<nav class="mobile-nav-overlay">
+  <ul class="mobile-list">
+  <li class="mobile-list-items">Studio</li>
+  <li class="mobile-list-items">Portfolio</li>
+  <li class="mobile-list-items">Contacts</li>
+</ul>
+</nav>
+        <address class="adres-mobile-contacts">
+          <ul class="mobile-contacts">
+            <li class="mobile-contact-item">
+              <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="mobile-contact-item">
+              <a class="mobile-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+                        <ul class="list-svg-ourteam-mobile">
+                  <li class="circle-our-team-mobile"> 
+                    <a href="" class="icons-inside-mobile">
+                    <svg class="svg-ourteam-mobile" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram2"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li class="circle-our-team-mobile"> 
+                    <a href="" class="icons-inside-mobile">
+                    <svg class="svg-ourteam-mobile" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter1"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li class="circle-our-team-mobile"> 
+                    <a href="" class="icons-inside-mobile">
+                    <svg class="svg-ourteam-mobile" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facbook"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li class="circle-our-team-mobile"> 
+                    <a href="" class="icons-inside-mobile">
+                    <svg class="svg-ourteam-mobile" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin1"></use>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
+      </div>
+    </div>
   </body>
 </html>
