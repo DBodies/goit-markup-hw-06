@@ -484,9 +484,9 @@ line-height: 2;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 margin-bottom: 16px;
+padding-left: 16px;
 }
 .footer-input::placeholder {
-  padding-left: 16px;
 color: rgb(255, 255, 255);
 opacity: 0.8;
 font-size: 12px;
@@ -623,7 +623,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .mobile-contacts-link:focus{
     color: rgb(77, 90, 229);
 }
-
+.footer-subscribe {
+  margin-bottom: 96px;
+}
 .list-svg-ourteam-mobile {
     display: flex;
     gap: 40px;
@@ -861,4 +863,3 @@ cursor: pointer;
   /* ========================================================================================================================================================
 Start tabletop
   ======================================================================================================================================================== */
-  
