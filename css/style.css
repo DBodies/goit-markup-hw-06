@@ -46,7 +46,10 @@ body {
 /* ========================================================================================================================================================
   Common
   ======================================================================================================================================================== */
-
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .container {
   max-width: 320px;
   padding: 0 16px;
@@ -57,10 +60,6 @@ body {
     max-width: 1158px;
     padding: 0 15px;
   }
-}
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 @media screen and (min-width: 1158px) {
   .section {
@@ -76,7 +75,8 @@ Header
     display: none;
   }
   .top-btn {
-    margin-right:  auto;
+    padding: 0;
+    margin-left:  auto;
     border:none;
     background-color:transparent;
   }
@@ -86,17 +86,15 @@ Header
      fill: #2f2f37;
     display: flex;
   }
-  .hero-wrap {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+.container.hero-wrap {
+  display: flex;
+  flex-direction: row;
+}
   .header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;}
   .header-logo {
-      margin-right: 149px;
     padding: 16px 0;
  font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -142,11 +140,6 @@ First section
       url(../images/mobile/Dark-bg@2x.jpg);
   }
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .main-header {
     font-weight: 700;
 font-size: 36px;
@@ -188,11 +181,10 @@ Second section
     display: none;
 }
 .we-list {
-    margin-top: 96px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+    gap: 72px;
 }
 .our-tactic {
     color: rgb(46, 47, 66);
@@ -204,7 +196,6 @@ letter-spacing: 2%;
 }
 .repeat-text {
     margin-top: 8px;
-    margin-bottom: 72px;
 color: rgb(67, 68, 85);
 font-family: Roboto;
 font-size: 16px;
@@ -220,23 +211,22 @@ Third section
 background: rgb(244, 244, 253);
 }
 .second-header {
-    margin-top: 96px;
     color: rgb(46, 47, 66);
 font-family: Roboto;
 font-size: 36px;
 font-weight: 700;
 line-height: 40px;
 letter-spacing: 2%;
+    margin-bottom: 72px;
 }
 .second-h-list {
   background-color: #FFFFFF;
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .second-header-menu {
-    margin-top: 72px;
-    margin-bottom: 96px;
     display: flex;
     flex-direction: column;
     gap: 72px;
@@ -250,7 +240,6 @@ letter-spacing: 2%;
   color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 .bodies-do {
   font-weight: 400;
@@ -286,6 +275,10 @@ background: rgb(49, 208, 170);
 .svg-ourteam {
     fill: white;
 }
+.names-worker {
+  padding: 32px 0;
+
+}
 .circle-our-team {
 width: 40px;
 height: 40px;
@@ -295,14 +288,11 @@ background: rgb(77, 90, 229);
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 32px;
 }
   /* ========================================================================================================================================================
 Fourth section
   ======================================================================================================================================================== */
-.fourth-section-main {
-  margin-bottom: 96px;
-}
+
   .our-portfolio {
   color: rgb(46, 47, 66);
 font-family: Roboto;
@@ -310,7 +300,6 @@ font-size: 36px;
 font-weight: 700;
 line-height: 40px;
 letter-spacing: 2%;
-margin-top: 96px;
 margin-bottom: 72px;
 }
 .our-portfolio-menu {
@@ -320,7 +309,6 @@ column-gap: 24px;
 row-gap: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .names-doing-app {
   padding: 32px 16px;
@@ -336,7 +324,6 @@ row-gap: 48px;
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
 .our-portfolio-text {
   font-weight: 400;
   font-size: 16px;
@@ -352,9 +339,6 @@ row-gap: 48px;
 .traveled-overlay {
   position: relative;
 overflow: hidden;
-    width: 360px;
-    margin: 0 auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list:hover .traveled-text {
 transform: translateY(0);
@@ -384,7 +368,8 @@ Footer
   ======================================================================================================================================================== */
 .footer {
     background-color: #2e2f42;
-    padding-top: 96px;
+    padding: 96px 0;
+
 }
 .container {
   display: flex;
@@ -403,6 +388,7 @@ Footer
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-studio {
     color: #f4f4fd;
@@ -416,7 +402,6 @@ Footer
     letter-spacing: 0.02em;
     max-width: 264px;
     text-align: left;
-    margin-bottom: 72px;
 }
 .social-media {
     font-weight: 500;
@@ -425,11 +410,17 @@ Footer
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
+  text-align: center;
+}
+.footer-container-logo {
+        margin-bottom: 72px;
+}
+.container-footer-link {
+    margin-bottom: 72px;
 }
 .footer-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
@@ -456,6 +447,7 @@ Footer
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
+  text-align: center;
 }
 .baseline-div {
   display: flex;
@@ -517,9 +509,10 @@ color: #FFFFFF;
 /* ========================================================================================================================================================
 Mobile-menu Navigation
   ======================================================================================================================================================== */
-
+.mobile-nav-overlay {
+  margin-bottom: auto;
+}
   .mobile-menu-overlay {
-  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -535,7 +528,7 @@ Mobile-menu Navigation
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu-overlay .is-open {
+.mobile-menu-overlay.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -547,12 +540,15 @@ Mobile-menu Navigation
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
   .mobile-menu {
   max-width: 320px;
-  height: 640px;
+  height: 100%;
+  margin: 0 auto;
   }
   .mobile-btn-closer {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -594,11 +590,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .mobile-list-items:focus {
     color: rgb(64, 75, 191);
 }
+.second-active {
+    color: #404bbf;
+  }
 .mobile-contacts {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-top: 168px;
 }
 .mobile-contacts-link {
     color: rgb(67, 68, 85);
@@ -608,6 +606,7 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 2%;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+font-style: normal;
 }
 .mobile-contacts-link:hover{
     color: rgb(77, 90, 229);
@@ -615,9 +614,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .mobile-contacts-link:focus{
     color: rgb(77, 90, 229);
 }
-.footer-subscribe {
-  margin-bottom: 96px;
-}
+.second-active {
+    color: #404bbf;
+  }
 .list-svg-ourteam-mobile {
     display: flex;
     gap: 40px;
@@ -659,8 +658,9 @@ Mobile modal
   visibility: hidden;
   pointer-events: none;
   background-color: rgba(46, 47, 66, 0.4);
- transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); }
-.modal-overlay .is-open {
+ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-overlay.is-open {
   opacity: 1;
     visibility: visible;
   pointer-events: auto;
@@ -856,6 +856,9 @@ cursor: pointer;
 Start tablet
   ======================================================================================================================================================== */
 @media screen and (min-width: 768px) {
+  .mobile-menu-overlay {
+    display: none;
+  }
   .container {
     max-width: 768px;
   }
@@ -909,11 +912,11 @@ flex-direction: row;
   .contacts {
     font-style: normal;
     display: block;
+    margin-left: auto;
   }
   .header-contacts {
     display: flex;
     flex-direction: column;
-    margin-left: 121px;
     gap: 12px;
   }
   .header-contacts-link {
@@ -1242,7 +1245,7 @@ Third section start
       flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    row-gap: 64px;
+    row-gap: 72px;
     justify-content: center;
 }
             /* ========================================================================================================================================================
@@ -1272,12 +1275,23 @@ Footer start
     flex-wrap: wrap;
     gap: 72px 24px;
     align-items: baseline;
-    padding-left: 0;
+    padding: 0 108px;
       text-align: left 
 }
 .baseline-div {
   flex-direction: row;
   align-items: flex-start;
+}
+.social-media {
+  text-align: start;
+}
+.footer-input {
+  max-width: 264px;
+  margin: 0;
+}
+
+.paragraph-subscribe {
+  text-align: start;
 }
 .footer-btn {
   margin-left: 24px;
@@ -1304,7 +1318,12 @@ display: flex;
 flex-direction: row;
 gap: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 332px;
+}
+.header-contacts-link {
+  font-size: 16px;
+}
+.header-menu-link {
+  font-size: 16px;
 }
                     /* ========================================================================================================================================================
 First section
@@ -1314,7 +1333,7 @@ First section
   rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)
   ),
-  url(../images/people-office2.jpg);
+  url(../images/Tablet/PCpeople-office@1x.jpg);
      background-color: #2e2f42;
   max-width: 1440px;
   margin: 0 auto;
@@ -1332,7 +1351,10 @@ background-size: cover;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Tablet/Dark-bg@2x.jpg);
+      url(../images/Tablet/PCpeople-office@2x.jpg);
+  }
+  .main-header {
+    margin-bottom: 48px;
   }
 }
                     /* ========================================================================================================================================================
@@ -1409,6 +1431,13 @@ width: 264px;
 .footer-input::placeholder {
 color: #FFFFFF;
 }
-
-
+.footer-container-logo {
+  margin: 0;
+}
+.repeat-text-ones {
+  margin: 0;
+}
+.footer-list {
+  margin: 0;
+}
 }
