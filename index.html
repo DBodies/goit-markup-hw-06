@@ -69,7 +69,7 @@
       <section class="first-section-header">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-header-btn">Order Service</button>
+          <button type="button" class="main-header-btn" data-modal-open >Order Service</button>
         </div>
       </section>
       <!-- First section END -->
@@ -549,9 +549,9 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open" data-modal="">
       <div class="modal">
-        <button class="modal-btn-closer" type="button">
+        <button class="modal-btn-closer" type="button" data-modal-close="">
           <svg class="svg-close-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
@@ -638,9 +638,9 @@
       </div>
     </div>
     <!-- Mobile-menu Nav -->
-    <div class="mobile-menu-overlay is-open">
+    <div class="mobile-menu-overlay is-open" data-modal>
       <div class="mobile-menu container-menu">
-        <button type="button" class="mobile-btn-closer">
+        <button type="button" class="mobile-btn-closer" data-modal-close>
           <svg class="mobile-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
@@ -712,5 +712,6 @@
         </ul>
       </div>
     </div>
+    <script src="/modal.js"></script>
   </body>
 </html>
